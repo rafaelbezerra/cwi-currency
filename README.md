@@ -34,5 +34,5 @@ You should create the following function:
 > currencyQuotation("USD", "EUR", 100.00, "20/11/2014") = 79.69
 
 > Data source:
-> 20/11/2014 – 220 – A – USD - 2,54400000
-> 20/11/2014 - 978 - B - EUR - 3,19170000
+> * 20/11/2014 – 220 – A – USD - 2,54400000
+> * 20/11/2014 - 978 - B - EUR - 3,19170000
