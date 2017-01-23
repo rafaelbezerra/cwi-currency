@@ -9,7 +9,7 @@ public class Usage {
 
 		CurrencyService currencyService = new CurrencyServiceImpl();
 
-		System.out.println(currencyService.currencyQuotation("USD", "EUR", 100.00, "20/11/2014"));
+		System.out.println(currencyService.currencyQuotation("USD", "EUR", 100.00, "22/01/2017"));
 
 	}
 }

@@ -5,6 +5,11 @@ import java.util.Date;
 
 import com.rafaelbezerra.cwi.currency.enums.CurrencyIdentifierEnum;
 
+/**
+ * Currency DTO to be used for the DTO from mirror of CSV row
+ * 
+ * @author rafaelbezerra
+ */
 public class CurrencyDTO {
 
 	private Date quotationDate;

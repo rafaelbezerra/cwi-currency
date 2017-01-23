@@ -1,5 +1,12 @@
 package com.rafaelbezerra.cwi.currency.enums;
 
+/**
+ * Currency Identifier Enum
+ * 
+ * Could be improved with more currencies informations.
+ * 
+ * @author rafaelbezerra
+ */
 public enum CurrencyIdentifierEnum {
 
 	AED("AED"),
@@ -324,7 +331,7 @@ public enum CurrencyIdentifierEnum {
 		return identifier;
 	}
 
-	public CurrencyIdentifierEnum getByIdentifier(String identifier) {
+	public static CurrencyIdentifierEnum getByIdentifier(String identifier) {
 		return Enum.valueOf(CurrencyIdentifierEnum.class, identifier);
 	}
 

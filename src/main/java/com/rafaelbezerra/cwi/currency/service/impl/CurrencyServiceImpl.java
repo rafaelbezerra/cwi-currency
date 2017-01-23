@@ -8,19 +8,21 @@ import com.rafaelbezerra.cwi.currency.manager.CurrencyManager;
 import com.rafaelbezerra.cwi.currency.manager.impl.CurrencyManagerCSVImpl;
 import com.rafaelbezerra.cwi.currency.service.CurrencyService;
 
+/**
+ * Currency Service Implementation of {@link CurrencyService}
+ * 
+ * @author rafaelbezerra
+ */
 public class CurrencyServiceImpl implements CurrencyService {
 
 	private CurrencyManager currencyManager = new CurrencyManagerCSVImpl();
 	private CurrencyController currencyController = new CurrencyController();
 
 	public BigDecimal currencyQuotation(String from, String to, Number value, String quotation) {
-
 		CurrencyDTO currencyFrom = currencyManager.findByCurrencyQuotation(from, quotation);
 		CurrencyDTO currencyTo = currencyManager.findByCurrencyQuotation(to, quotation);
 
-		BigDecimal currency = currencyController.currencyCalculation(currencyFrom, currencyTo, value);
-
-		return currency;
+		return currencyController.currencyCalculation(currencyFrom, currencyTo, value);
 	}
 
 }
