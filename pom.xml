@@ -21,6 +21,7 @@
 	<properties>
 		<jdk.version>1.7</jdk.version>
 		<junit.version>4.12</junit.version>
+		<mockito-all.version>1.9.5</mockito-all.version>
 		<surefire-junit4.version>2.19.1</surefire-junit4.version>
 	</properties>
 
@@ -32,6 +33,11 @@
 				<version>${junit.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-all</artifactId>
+				<version>${mockito-all.version}</version>
+			</dependency>
 
 		</dependencies>
 	</dependencyManagement>
@@ -40,6 +46,11 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
 			<scope>test</scope>
 		</dependency>
 
