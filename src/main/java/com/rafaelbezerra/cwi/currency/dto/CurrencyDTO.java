@@ -85,4 +85,47 @@ public class CurrencyDTO {
 		this.saleParity = saleParity;
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CurrencyDTO other = (CurrencyDTO) obj;
+		if (currency != other.currency)
+			return false;
+		if (id != other.id)
+			return false;
+		if (purchaseParity == null) {
+			if (other.purchaseParity != null)
+				return false;
+		} else if (!purchaseParity.equals(other.purchaseParity))
+			return false;
+		if (purchaseRate == null) {
+			if (other.purchaseRate != null)
+				return false;
+		} else if (!purchaseRate.equals(other.purchaseRate))
+			return false;
+		if (quotationDate == null) {
+			if (other.quotationDate != null)
+				return false;
+		} else if (!quotationDate.equals(other.quotationDate))
+			return false;
+		if (saleParity == null) {
+			if (other.saleParity != null)
+				return false;
+		} else if (!saleParity.equals(other.saleParity))
+			return false;
+		if (saleRate == null) {
+			if (other.saleRate != null)
+				return false;
+		} else if (!saleRate.equals(other.saleRate))
+			return false;
+		if (type != other.type)
+			return false;
+		return true;
+	}
+
 }
